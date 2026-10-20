@@ -1,4 +1,4 @@
 package com.dohieuhien.shop.trainingsport.dto.respond;
 
-public class MatchRow {
+public record MatchRow() {
 }
