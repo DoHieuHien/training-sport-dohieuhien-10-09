@@ -15,6 +15,7 @@ import java.time.Instant;
 @AllArgsConstructor
 @Document(collation = "league")
 public class League {
+
     @Id
     private Long leagueId;
     private String leagueName;
