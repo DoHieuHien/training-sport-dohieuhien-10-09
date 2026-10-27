@@ -5,10 +5,10 @@ import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record MatchApi(
-        Integer matchID,
+        Long matchID,
         String matchDateTime,
         String timeZoneID,
-        Integer leagueId,
+        Long leagueId,
         String leagueName,
         Integer leagueSeason,
         String leagueShortcut,
@@ -33,7 +33,7 @@ public record MatchApi(
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public record Team(
-            Integer teamId,
+            Long teamId,
             String teamName,
             String shortName,
             String teamIconUrl,
@@ -42,14 +42,14 @@ public record MatchApi(
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public record Location(
-            Integer locationID,
+            Long locationID,
             String locationCity,
             String locationStadium
     ) {}
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public record Result(
-            Integer resultID,
+            Long resultID,
             String resultName,
             Integer pointsTeam1,
             Integer pointsTeam2,
@@ -61,7 +61,7 @@ public record MatchApi(
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public record Goal(
-            Integer goalID,
+            Long goalID,
             Integer scoreTeam1,
             Integer scoreTeam2,
             Integer matchMinute,

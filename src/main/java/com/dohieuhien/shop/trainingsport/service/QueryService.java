@@ -17,5 +17,5 @@ public interface QueryService {
     List<League> allLeagues();
 
     PageResponse<MatchRow> matches(String leagueShortcut, String leagueSeason, int page, int size);
-    List<Match> allMatches(String leagueShortcut, String leagueSeason);
+    List<MatchRow> allMatches(String leagueShortcut, String leagueSeason);
 }
