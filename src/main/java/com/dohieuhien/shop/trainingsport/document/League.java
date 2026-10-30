@@ -13,7 +13,7 @@ import java.time.Instant;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collation = "league")
+@Document(collection = "leagues")
 public class League {
 
     @Id

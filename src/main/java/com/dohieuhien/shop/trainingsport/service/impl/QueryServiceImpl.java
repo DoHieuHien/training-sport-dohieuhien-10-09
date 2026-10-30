@@ -101,8 +101,9 @@ public class QueryServiceImpl implements QueryService {
     }
 
     private boolean filtered(String leagueShortcut, String leagueSeason){
-        boolean hasShortcut = leagueShortcut != null && !leagueSeason.isBlank();
+        boolean hasShortcut = leagueShortcut != null && !leagueShortcut.isBlank();
         boolean hasSeason = leagueSeason != null && !leagueSeason.isBlank();
+
         if (hasShortcut != hasSeason) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
                     "Need leagueShortcut and leagueSeason or nothing");
